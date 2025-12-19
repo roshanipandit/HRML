@@ -3,7 +3,7 @@ import numpy as np
 import joblib
 
 # ================= LOAD MODEL =================
-model = joblib.load("hr_attrition_model.pkl")
+model = joblib.load("HR_Attrition_.pkl")
 
 # ================= UI =================
 st.title("HR Attrition Prediction")
