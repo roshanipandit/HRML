@@ -33,7 +33,6 @@ if st.button("Predict Attrition"):
                    work_life_balance,
                    overtime]])
     
-    X = scaler.transform(X)   # remove if you did not scale
     
     prediction = model.predict(X)[0]
     prob = model.predict_proba(X)[0][1]
