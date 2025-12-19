@@ -4,7 +4,7 @@ import numpy as np
 import joblib
 
 # Load model & scaler
-model = joblib.load("HR_attrition_.pkl")
+model = joblib.load("HR_Attrition_.pkl")
 scaler = joblib.load("scaler.pkl")   # if you used scaling
 
 # Title
