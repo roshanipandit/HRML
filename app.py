@@ -25,15 +25,17 @@ overtime = 1 if overtime == "Yes" else 0
 
 if st.button("Predict Attrition"):
     
-    X = np.array([[age,
-                   monthly_income,
-                   distance_from_home,
-                   years_at_company,
-                   job_satisfaction,
-                   work_life_balance,
-                   overtime]])
-    
-    
+X = np.array([[age,
+               monthly_income,
+               distance_from_home,
+               years_at_company,
+               job_satisfaction,
+               work_life_balance,
+               overtime,
+               gender,
+               department,
+               job_role]])
+
     prediction = model.predict(X)[0]
     prob = model.predict_proba(X)[0][1]
     
