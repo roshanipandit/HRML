@@ -20,6 +20,9 @@ years_at_company = st.number_input("Years at Company", min_value=0, max_value=40
 job_satisfaction = st.selectbox("Job Satisfaction (1=Low, 4=High)", [1,2,3,4])
 work_life_balance = st.selectbox("Work Life Balance (1=Bad, 4=Excellent)", [1,2,3,4])
 overtime = st.selectbox("OverTime", ["Yes", "No"])
+gender = st.selectbox("Gender", ["Male", "Female"])
+department = st.selectbox("Department", ["Sales", "HR", "R&D"])
+job_role = st.selectbox("Job Role", ["Manager", "Developer", "Analyst"])
 
 overtime = 1 if overtime == "Yes" else 0
 
